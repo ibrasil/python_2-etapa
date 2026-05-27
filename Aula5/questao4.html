@@ -1,0 +1,12 @@
+{% extends "index.html"%}
+
+{% block title%} questao4 {% endblock%}
+{% block contente%} 
+
+
+{% for aluno in alunos %}
+    <p>{{ loop.index }} - {{ aluno.nome }}</p>
+{% endfor %}
+
+
+{% endblock%}
